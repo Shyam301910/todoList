@@ -14,7 +14,7 @@ This is a **MERN (MongoDB, Express, React, Node.js)** stack-based Todo List appl
 
 - Node.js (v16 or later)
 - MongoDB (local or cloud instance)
-- ES7+ React/Redux/React-Native snippets, VSCode React Refactor, VSCode React Refactor, npm Intellisense extensions from VS Code
+- ES7+ React/Redux/React-Native snippets, VSCode React Refactor, npm Intellisense extensions from VS Code
 
 ### Backend Setup
 1. Navigate to the `server` directory:
