@@ -1,0 +1,18 @@
+.create{
+    input{
+        width: 28vw;
+        padding: 10px;
+        // border-bottom: 2px solid yellow;
+        outline: none;
+        margin-top: 2vh;
+        border: 2px solid black;
+    }
+
+    button{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        width: 5vw;
+    }
+}

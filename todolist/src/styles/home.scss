@@ -1,0 +1,40 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 33vw;
+    height: 8vh;
+    background-color: black;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    // border-top: 2px solid green;
+    margin-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    // font-size: large;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.line_through{
+    text-decoration: line-through;
+}
