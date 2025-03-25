@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
+import { toast } from 'react-toastify';
 
 const Create = () => {
   const [task,setTask]=useState("")
@@ -8,8 +9,12 @@ const Create = () => {
     .then(result=>{
       console.log(result)
       setTask("")
+      toast.success("Task added successfully")
+    })  
+    .catch(err=>{
+      console.log(err)
+      toast.error("Failed to add task 🥺")
     })
-    .catch(err=>console.log(err))
   }
   return (
     <div className='create'>

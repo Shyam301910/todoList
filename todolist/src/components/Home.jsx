@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Create from './Create'
 import axios from 'axios'
 import { BsCircleFill,BsTrashFill,BsCheckCircleFill } from "react-icons/bs";
+import { toast } from 'react-toastify';
 
 const Home = () => {
     // eslint-disable-next-line no-unused-vars
@@ -20,8 +21,14 @@ const Home = () => {
 
     const handleDelete=(id)=>{
         axios.delete("http://localhost:5000/delete/"+id)
-        .then(res=>console.log(res)) //(res=>location.reload())
-        .catch(err =>console.log(err))
+        .then(res=>{
+            console.log(res)
+            toast.success("Task removed from the list")
+        }) //(res=>location.reload())
+        .catch(err => {
+            console.log(err)
+            toast.error("Failed to remove toast from the list")
+        })
     }
   return (
     <div className='home'>
